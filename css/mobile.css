@@ -1,0 +1,163 @@
+@media screen and (max-width: 420px) {
+
+    body {
+        margin: 0px 23px;
+    }
+
+    nav {
+        margin-bottom: 5px;
+    }
+
+    main {
+        gap: 15px;
+        overflow: hidden;
+    }
+
+    .bodyLight {
+        margin-top: 24px;
+        align-items: initial;
+    }
+
+    .bodyDark {
+        margin-top: 24px;
+        align-items: initial;
+    }
+
+    .textSearchLight {
+        font-size: 13px;
+    }
+
+    .searchUser {
+        gap: 10px;
+    }
+
+    .search input {
+        font-size: 13px;
+    }
+
+    .search input::placeholder {
+        font-size: 13px;
+    }
+
+    .buttonSearch {
+        width: 51px;
+        height: 21px;
+        padding: 12.5px 16px;
+        font-size: 13px;
+    }
+
+    .searchLight {
+        height: 40px;
+    }
+
+    .searchDark {
+        height: 40px;
+    }
+
+    .searchIcon {
+        margin-left: 5px;
+        width: 20px;
+        height: 20px;
+        background-size: cover;
+    }
+
+    .userInfoLight {
+        padding: 0px;
+
+    }
+
+    .userInfoDark {
+        padding: 0px;
+
+    }
+
+    .userDesc {
+        padding: 22px 23px 30px 23px;
+    }
+
+    .userBasic {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .userInitial {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: initial;
+        line-height: 0px;
+    }
+
+    .userInitial h1 {
+        margin-top: 8px;
+        font-size: 16px;
+        line-height: 5px;
+    }
+
+    .userInitial h4 {
+        font-size: 13px;
+    }
+
+    .perfilAge {
+        line-height: 0px;
+        margin-top: 12px;
+    }
+
+    .userInitialDesc {
+        display: flex;
+        align-items: center;
+    }
+
+    .user {
+        margin: 5px 0px;
+        font-size: 13px;
+    }
+
+    .userBio {
+        font-size: 13px;
+    }
+
+    .userPhoto {
+        width: 70px;
+        height: 70px;
+    }
+
+    .photo {
+        display: none;
+    }
+
+    .userReputationLight {
+        padding: 15px 30px;
+    }
+
+    .userReputationDark {
+        padding: 15px 30px;
+    }
+
+    .userReputationDark h4 {
+        font-size: 11px;
+    }
+
+    .userReputationLight h4 {
+        font-size: 11px;
+    }
+
+    .userReputationLight h2 {
+        font-size: 16px;
+    }
+
+    .userReputationDark h2 {
+        font-size: 16px;
+    }
+
+    .userDetails {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .userDetails h4 {
+        font-size: 13px;
+    }
+
+}

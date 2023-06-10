@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 38px;
+    color: #2B3442;
+    margin: 0px;
+}
+
+h2 {
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 33px;
+    color: #2B3442;
+    margin: 0px;
+}
+
+h3 {
+    font-family: 'Space Mono', monospace;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #0079FF;
+    margin: 0px;
+}
+
+h4 {
+    font-family: 'Space Mono', monospace;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: #4B6A9B;
+    margin: 0px;
+}
+
+.bodyLight {
+    font-family: 'Space Mono', monospace;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #2B3442;
+    height: 100vh;
+    background-color: #F6F8FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.bodyDark {
+    font-family: 'Space Mono', monospace;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #2B3442;
+    height: 100vh;
+    background-color: #141D2F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+main {
+    width: 730px;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 38px;
+    margin-bottom: 22px;
+}
+
+.changeMode {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.textMode {
+    font-weight: 700;
+    letter-spacing: 2.5px;
+}
+
+.iconModeLight {
+    background-image: url(../assets/icon-moon.svg);
+    width: 20px;
+    height: 20px;
+}
+
+
+.iconModeDark {
+    background-image: url(../assets/icon-sun.svg);
+    width: 20px;
+    height: 20px;
+}
+
+.searchLight {
+    background-color: #FEFEFE;
+    height: 49px;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+    display: flex;
+    align-items: center;
+}
+
+.searchDark {
+    background-color: #1E2A47;
+    height: 49px;
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.searchUser {
+    display: flex;
+    gap: 20px;
+    flex-grow: 1;
+    cursor: pointer;
+}
+
+.search {
+    flex-grow: 1;
+}
+
+.search input {
+    font-weight: 400;
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+    width: 90%;
+    cursor: pointer;
+}
+
+.search input:focus {
+    outline: none
+}
+
+.search input::placeholder {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.textSearchLight {
+    color: #2B3442;
+    caret-color: #0079FF;
+}
+
+.textSearchLight::placeholder {
+    color: #4B6A9B;
+}
+
+.textSearchDark {
+    color: #FFFFFF;
+    caret-color: #0079FF;
+}
+
+.textSearchDark::placeholder {
+    color: #FFFFFF;
+}
+
+
+.searchIcon {
+    background-image: url(../assets/icon-search.svg);
+    height: 24px;
+    width: 25px;
+    margin-left: 20px;
+}
+
+.sendSearch {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.unknownUser {
+    font-size: 15px;
+    color: #F74646 !important;
+    display: none;
+}
+
+.buttonSearch {
+    background-color: #0079FF;
+    color: white;
+    height: 29px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 25px;
+    border-radius: 10px;
+    user-select: none;
+}
+
+.userInfoLight {
+    display: flex;
+    background-color: #FEFEFE;
+    border-radius: 15px;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+    padding: 40px;
+    gap: 35px;
+}
+
+.userInfoDark {
+    display: flex;
+    background-color: #1E2A47;
+    border-radius: 15px;
+    padding: 40px;
+    gap: 35px;
+}
+
+.userPhoto {
+    width: 117px;
+    height: 117px;
+    border-radius: 50%;
+    background-image: url();
+    background-size: cover;
+
+}
+
+.userDesc {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 30px;
+}
+
+.userReputationLight {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F6F8FF;
+    padding: 15px 80px 15px 30px;
+    border-radius: 15px;
+}
+
+.userReputationDark {
+    display: flex;
+    justify-content: space-between;
+    background-color: #141D2F;
+    padding: 15px 80px 15px 30px;
+    border-radius: 15px;
+}
+
+.userBasic {
+    display: flex;
+    flex-direction: column;
+}
+
+.userInitial {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.userInitial h4 {
+    font-size: 15px;
+}
+
+.perfilAgeLight {
+    font-size: 15px;
+    color: #697C9A !important;
+}
+
+.perfilAgeDark {
+    font-size: 15px;
+    color: #FFFFFF !important;
+}
+
+.userBio {
+    font-size: 15px;
+    opacity: 0.75;
+}
+
+.user {
+    margin: 3px 0 20px 0;
+}
+
+.userDetails {
+    display: flex;
+    padding-right: 50px;
+    justify-content: space-between;
+}
+
+.userDetails div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-right: 8px;
+}
+
+.userDetails div div {
+    display: flex;
+    flex-direction: row;
+}
+
+.locIconLight {
+    background-image: url(../assets/icon-location-light.svg);
+    height: 20px;
+    width: 20px;
+    background-repeat: no-repeat;
+}
+
+.locIconDark {
+    background-image: url(../assets/icon-location-dark.svg);
+    height: 20px;
+    width: 20px;
+    background-repeat: no-repeat;
+}
+
+.twitterIconLight {
+    background-image: url(../assets/icon-twitter-light.svg);
+    height: 18px;
+    width: 20px;
+}
+
+.twitterIconDark {
+    background-image: url(../assets/icon-twitter-dark.svg);
+    height: 18px;
+    width: 20px;
+}
+
+
+.jobIconLight {
+    background-image: url(../assets/icon-company-light.svg);
+    height: 20px;
+    width: 20px;
+}
+
+.jobIconDark {
+    background-image: url(../assets/icon-company-dark.svg);
+    height: 20px;
+    width: 20px;
+}
+
+.siteIconLight {
+    background-image: url(../assets/icon-website-light.svg);
+    height: 20px;
+    width: 20px;
+}
+
+.siteIconDark {
+    background-image: url(../assets/icon-website-dark.svg);
+    height: 20px;
+    width: 20px;
+}
+
+.userDetails h4 {
+    font-size: 15px;
+}
+
+
+nav h1 {
+    user-select: none;
+}
+
+.author {
+    position: absolute;
+    top: 95vh;
+    user-select: none;
+}
+
+.author h1 {
+    font-size: 8px;
+    font-weight: 400;
+}
+
+.author span {
+    font-weight: 600;
+}
+
+.author span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+nav h1 {
+    cursor: pointer;
+    user-select: none;
+}

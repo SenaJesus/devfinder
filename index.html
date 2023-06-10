@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/tablet.css">
+  <link rel="stylesheet" href="css/mobile.css">
+  <title>devfinder</title>
+</head>
+
+<body class="bodyLight">
+  <main>
+    <nav>
+      <h1>devfinder</h1>
+      <div class="changeMode" onclick="changeMode()">
+        <h4 class="textMode">DARK</h4>
+        <div class="iconModeLight"></div>
+      </div>
+    </nav>
+    <section class="searchLight">
+      <div class="searchUser">
+        <div class="searchIcon"></div>
+        <div class="search"><input class="textSearchLight" placeholder="Search GitHub username…" spellcheck="false">
+        </div>
+      </div>
+      <div class="sendSearch">
+        <h2 class="unknownUser">No results</h2>
+        <div class="buttonSearch">Search</div>
+      </div>
+    </section>
+    <section class="userInfoLight">
+      <section class="photo">
+        <div class="userPhoto"></div>
+      </section>
+      <section class="userDesc">
+        <section class="userBasic">
+          <div class="userInitial">
+            <h1></h1>
+            <h4 class="perfilAge"></h4>
+          </div>
+          <div class="userInitialDesc">
+            <h3 class="user"></h3>
+            <h4 class="userBio"></h4>
+          </div>
+        </section>
+        <section class="userReputationLight">
+          <div>
+            <h4>Repos</h4>
+            <h2 class="userRepos"></h2>
+          </div>
+          <div>
+            <h4>Followers</h4>
+            <h2 class="userFollowers"></h2>
+          </div>
+          <div>
+            <h4>Following</h4>
+            <h2 class="userFollowing"></h2>
+          </div>
+        </section>
+        <section class="userDetails">
+          <div>
+            <div>
+              <div class="locIconLight"></div>
+              <h4 class="locInfo"></h4>
+            </div>
+            <div>
+              <div class="siteIconLight"></div>
+              <h4 class="siteInfo"></h4>
+            </div>
+          </div>
+          <div>
+            <div>
+              <div class="twitterIconLight"></div>
+              <h4 class="twitterInfo"></h4>
+            </div>
+            <div>
+              <div class="jobIconLight"></div>
+              <h4 class="jobInfo"></h4>
+            </div>
+          </div>
+        </section>
+      </section>
+    </section>
+  </main>
+
+  <div class="author">
+    <h1>Coded by <span>Jesus Sena</span></h1>
+  </div>
+</body>
+
+<script src="js/script.js"></script>
+<script src="js/device.js"></script>
+
+</html>
